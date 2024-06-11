@@ -28,4 +28,8 @@ public partial class User
     public int? Status { get; set; }
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+
+    public virtual ICollection<Shipping> Shippings { get; set; } = new List<Shipping>();
+
+    public virtual ICollection<ShoppingCart> ShoppingCarts { get; set; } = new List<ShoppingCart>();
 }

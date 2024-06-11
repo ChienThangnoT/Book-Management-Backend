@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BookManagement.Repository.Common;
+using BookManagement.Service.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;

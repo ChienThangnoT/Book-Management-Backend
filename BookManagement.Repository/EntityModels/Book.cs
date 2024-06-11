@@ -15,13 +15,15 @@ public partial class Book
 
     public string? Publisher { get; set; }
 
-    public int? CategoryId { get; set; }
-
     public double? Price { get; set; }
 
     public string? BookDescription { get; set; }
 
-    public virtual Category? Category { get; set; }
+    public int? Quantity { get; set; }
+
+    public virtual ICollection<CategoryDetail> CategoryDetails { get; set; } = new List<CategoryDetail>();
 
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+
+    public virtual ICollection<ShoppingCart> ShoppingCarts { get; set; } = new List<ShoppingCart>();
 }

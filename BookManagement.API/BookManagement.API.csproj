@@ -12,11 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookManagement.Repository\BookManagement.Repository.csproj" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\BookManagement.Repository\BookManagement.Repository.csproj" />
   </ItemGroup>
 
 </Project>

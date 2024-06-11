@@ -17,7 +17,11 @@ public partial class Order
 
     public string? TransactionNo { get; set; }
 
+    public string? Address { get; set; }
+
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+
+    public virtual ICollection<Shipping> Shippings { get; set; } = new List<Shipping>();
 
     public virtual User? User { get; set; }
 }
