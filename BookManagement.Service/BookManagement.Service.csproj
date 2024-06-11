@@ -7,13 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="BusinessModel\" />
-    <Folder Include="Mapper\" />
-    <Folder Include="ResponeModel\" />
+    <Folder Include="BusinessModel\BookModels\" />
+    <Folder Include="BusinessModel\Categorymodels\" />
+    <Folder Include="BusinessModel\DiscountModels\" />
+    <Folder Include="BusinessModel\UserModels\" />
+    <Folder Include="BusinessModel\OrderDetailModels\" />
+    <Folder Include="BusinessModel\OrderModels\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookManagement.Repository\BookManagement.Repository.csproj" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
   </ItemGroup>
 
 </Project>

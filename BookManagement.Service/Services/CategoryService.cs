@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookManagement.Service.Services.IServices
+namespace BookManagement.Service.Services
 {
-    public interface IUnitOfWork
+    public class CategoryService
     {
     }
 }
